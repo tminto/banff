@@ -218,10 +218,8 @@
 <a href="day3.html" class="dayLink" id="dayLink3">Day 3</a>
 <a href="day4.html" class="dayLink" id="dayLink4">Day 4</a>
 
-<div id="day1" class="dayContent lightBlueBG">loadcontent</div>
-<div id="day2" class="dayContent">loadcontent</div>
-<div id="day3" class="dayContent">loadcontent></div>
-<div id="day4" class="dayContent">loadcontent</div>
+<div class="dayContent lightBlueBG">loadcontent</div>
+
 
         <!-- Add your site or application content here -->
  
@@ -245,19 +243,19 @@
             $('a.dayLink').click(function(e){
                 e.preventDefault();
                 if(this.id=='dayLink1'){
-                     $('#day1').load(e.target.href + ' #day1Content');     
+                     $('.dayContent').load(e.target.href + ' #day1Content');     
                 }
                 else if(this.id=='dayLink2'){
      
-                     $('#day2').load(e.target.href + ' #day2Content');     
+                     $('.dayContent').load(e.target.href + ' #day2Content');     
                 }
                  else if(this.id=='dayLink3'){
                   
-                     $('#day3').load(e.target.href + ' #day3Content');     
+                     $('.dayContent').load(e.target.href + ' #day3Content');     
                 }
                   else if(this.id=='dayLink4'){
                   
-                     $('#day4').load(e.target.href + ' #day4Content');     
+                     $('.dayContent').load(e.target.href + ' #day4Content');     
                 }
             });
 
