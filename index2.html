@@ -145,7 +145,9 @@
         .dayLink {
             display:inline-block;
         }
-       
+        #dayLink1, #dayLink2, #dayLink3, #dayLink4 {
+
+        }
         .dayContent{
     
         }
@@ -210,11 +212,16 @@
     </span>
 </header>
 
+<!---Links for the days-->
+<a href="day1.html" class="dayLink" id="dayLink1">Day 1</a>
+<a  href="day2.html" class="dayLink" id="dayLink2">Day 2</a>
+<a href="day3.html" class="dayLink" id="dayLink3">Day 3</a>
+<a href="day4.html" class="dayLink" id="dayLink4">Day 4</a>
 
-<div id="day1" class="dayContent lightBlueBG"><img src="images/day1.svg" class="dayNumber"></div>
-<div id="day2" class="dayContent"><img src="images/day2.svg" class="dayNumber"></div>
-<div id="day3" class="dayContent"><img src="images/day3.svg" class="dayNumber"></div>
-<div id="day4" class="dayContent"><img src="images/day4.svg" class="dayNumber"></div>
+<div id="day1" class="dayContent lightBlueBG">loadcontent</div>
+<div id="day2" class="dayContent">loadcontent</div>
+<div id="day3" class="dayContent">loadcontent></div>
+<div id="day4" class="dayContent">loadcontent</div>
 
         <!-- Add your site or application content here -->
  
@@ -230,7 +237,18 @@
         <script src="banff.js"></script>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-     
+        
+        <script>
+
+        $(document).ready(function (){
+
+            $('.dayLink a').click(function(e){
+                e.preventDefault();
+                $('#day1').load(e.target.href + ' #day1Content');
+            });
+
+        });
+        </script>
 
        
     </body>
