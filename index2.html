@@ -239,7 +239,8 @@
         <script>
 
         $(document).ready(function (){
-
+            
+            $('.dayContent').load(day1.html + ' #day1Content');
             $('a.dayLink').click(function(e){
                 e.preventDefault();
                 if(this.id=='dayLink1'){
