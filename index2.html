@@ -244,7 +244,12 @@
 
             $('a.dayLink').click(function(e){
                 e.preventDefault();
-                $('#day1').load(e.target.href + ' #day1Content');
+                if(this.id=='dayLink1'){
+                     $('#day1').load(e.target.href + ' #day1Content');     
+                }
+                else if(this.id=='dayLink2'){
+                     $('#day2').load(e.target.href + ' #day2Content');     
+                }
             });
 
         });
