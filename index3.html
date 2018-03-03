@@ -16,6 +16,8 @@
 <link rel="stylesheet" href="normalize.css">
        <!-- <link rel="stylesheet" href="css/main.css">-->
         <style type="text/css">
+        /*create css break points for text size*/
+
         body {
         	background-color:#ffffff
         	font-family: helvetica, arial, sans-serif;
@@ -25,37 +27,50 @@
 
         .top{
             width:100%;
-            background:none;
+           
             position:fixed;
             top:0;
             left:0;
             text-align:center;
             z-index:200;
-           height:80px;
+           height:90px;
+           background:white;
        
         }
       
-        .topLeft {
-            width:100%;
-            background:blue;
-        }
+    
 
         .menuBtnHolder {
             display:inline-block;
             width:110px;
             cursor:pointer;
             background:orange;
-            
+            z-index:400;
+            margin-top:15px;
          
         }
+
+        nav {
+           
+            width:100%;
+            opacity:.7;
+            z-index:300;
+            width:100%;
+            height:90px;
+            margin:0px 0px;
+
+        }
+        nav ul {
+
+            margin:0px auto;
+        }
+        nav ul img {
+            max-height:80px;
+        }
         header {
-           /* background-image:url("header.png");
-        background-color:Yellow;
-        background-repeat:no-repeat;
-            background-size:contain;*/
        
             position:relative;
-            margin-top:0px;
+            margin-top:90px;
         }
 
     
@@ -72,7 +87,7 @@
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-image:url("images/lakeheader.jpg");
-            z-index::-10;
+            z-index:-10;
         }
         header #hero .inner {
 
@@ -125,16 +140,7 @@
         }
        
    
-        nav {
-            position:fixed;
-            background:yellow;
-            width:100%;
-            opacity:.7;
-            top:57px;
-            left:0;
-            z-index:300;
-            width:69%;
-        }
+
         .displayOff {
             display:none;
         }
@@ -175,22 +181,19 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-<div class="top" style="background:none;">
-    <div class="topLeft">
-       <div class="menuBtnHolder">
-            <img src="images/menu3.svg" style="width:80%;">
-        </div>
-            
-    </div>
-</div>
-<nav class="menu">
+<div class="top">
+
+       
+        <nav class="menu">
+                <div class="menuBtnHolder">
+                    <img src="images/menu3.svg" style="width:80%;">
+                </div>
                 <ul class="displayOff">
-                   <li> <a href="#">Day 1</a></li>
-                   <li> <a href="#">Day 2</a></li>
-                   <li> <a href="#">Day 3</a></li>
-                    <li><a href="#">Day 4</a></li>
+                   <img src="timeline_hz.svg">
                 </ul>
-</nav>
+        </nav>
+</div>
+
 <header>
    
     <div class="heroSideBar">
