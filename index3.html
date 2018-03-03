@@ -1,0 +1,251 @@
+<!doctype html>
+<html class="no-js" lang="">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/lsr7eak.css">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+<link rel="stylesheet" href="normalize.css">
+       <!-- <link rel="stylesheet" href="css/main.css">-->
+        <style type="text/css">
+        body {
+        	background-color:#ffffff
+        	font-family: helvetica, arial, sans-serif;
+             margin-top:0;
+             color:#fff;
+        }
+
+        .top{
+            width:100%;
+            background:none;
+            position:fixed;
+            top:0;
+            left:0;
+            text-align:center;
+            z-index:200;
+           height:80px;
+       
+        }
+      
+        .topLeft {
+            width:100%;
+            background:blue;
+        }
+
+        .menuBtnHolder {
+            display:inline-block;
+            width:110px;
+            cursor:pointer;
+            background:orange;
+            
+         
+        }
+        header {
+           /* background-image:url("header.png");
+        background-color:Yellow;
+        background-repeat:no-repeat;
+            background-size:contain;*/
+       
+            position:relative;
+            margin-top:0px;
+        }
+
+    
+    
+
+        header #hero {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            font: 0/0 serif;
+            text-shadow: none;
+            color: transparent;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-image:url("images/lakeheader.jpg");
+            z-index::-10;
+        }
+        header #hero .inner {
+
+            padding-top: 57.1%; /* height/width of image */
+            display: block;
+            height: 0;
+            z-index:0;
+        }
+         .heroSideBar {
+            background:#1796dd;
+            width:31%;
+            height:100%;
+            z-index:50;
+            position:absolute;
+            right:0;
+            top:0;
+            opacity:.9;
+         
+        }
+        .heroSideBarInner{
+        padding:8%;
+       }
+
+ 
+        .js{
+            display:none;
+        }
+        .mainTitle {
+            font-family:helvetica;
+            font-size:65px;
+            font-weight:bold;
+            color:#fff;
+            text-align:center;
+        }
+        .subTitle {
+            font-family:times;
+            font-style: italic;
+            color:#fff;
+            text-align:center;
+            font-size:30px;
+            letter-spacing:4px;
+        }
+        .description {
+            font-family:times;
+            color:#fff;
+            text-align:left;
+            font-size:18px;
+            line-height:24px;
+
+        }
+       
+   
+        nav {
+            position:fixed;
+            background:yellow;
+            width:100%;
+            opacity:.7;
+            top:57px;
+            left:0;
+            z-index:300;
+            width:69%;
+        }
+        .displayOff {
+            display:none;
+        }
+        .dayNumber {
+            width:200px;
+        }
+
+        .dayLink {
+            display:inline-block;
+        }
+        #dayLink1, #dayLink2, #dayLink3, #dayLink4 {
+
+        }
+        .dayContent{
+    
+        }
+       
+   
+        .introText {
+            height:250px;
+        }
+       .darkGreen {
+            color:#296554;
+        }
+        .darkGreenBG {
+            background-color:#eaeaea;
+        }
+
+        .lightBlueBG {
+            background-color:#96C9EB;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+<div class="top" style="background:none;">
+    <div class="topLeft">
+       <div class="menuBtnHolder">
+            <img src="images/menu3.svg" style="width:80%;">
+        </div>
+            
+    </div>
+</div>
+<nav class="menu">
+                <ul class="displayOff">
+                   <li> <a href="#">Day 1</a></li>
+                   <li> <a href="#">Day 2</a></li>
+                   <li> <a href="#">Day 3</a></li>
+                    <li><a href="#">Day 4</a></li>
+                </ul>
+</nav>
+<header>
+   
+    <div class="heroSideBar">
+        <div class="heroSideBarInner">
+        <p class="mainTitle">Amazing
+            Escape</p><p class="subTitle">My 9 days in
+            <br>Banff and Jasper</p>
+            <br><br>
+
+            <p class="description">Banff was never on my bucket list. But one day I saw a picture and simply had to go. Months of planning paid off when two friends and I got to experience the awe of the grandest mountains and a million jewel colored lakes. May this vacation inspire you and help you to plan yours.
+            </p>
+         </div>
+    </div>
+        <!--<div id="subtitle" class="js">A 10 day itinerary</div>-->
+    
+
+    <span id="hero" role="img" aria-label="Banff + Jasper">
+        <span class="inner"></span>
+    </span>
+</header>
+
+<!---Links for the days-->
+<a href="day1.html" class="dayLink" id="dayLink1">Day 1</a>
+<a  href="day2.html" class="dayLink" id="dayLink2">Day 2</a>
+<a href="day3.html" class="dayLink" id="dayLink3">Day 3</a>
+<a href="day4.html" class="dayLink" id="dayLink4">Day 4</a>
+
+<div class="dayContent lightBlueBG">loadcontent</div>
+
+
+        <!-- Add your site or application content here -->
+ 
+        <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineMax.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+
+        <script src="banff.js"></script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        
+        <script>
+
+        $(document).ready(function (){
+            
+            $('.dayContent').load('content.html');
+           
+
+        });
+        </script>
+
+       
+    </body>
+</html>

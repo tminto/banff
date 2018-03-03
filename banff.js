@@ -1,3 +1,4 @@
+/*TOGGLE MAIN MENU*/
 $(document).ready(function() {
 	$('.menuBtnHolder').click(function(){
 		$('ul').toggleClass('displayOff');
